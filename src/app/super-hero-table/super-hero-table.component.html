@@ -1,0 +1,8 @@
+<div class="pokemon-container">
+    <!-- Usamos *ngFor para iterar sobre el array pokemon -->
+    <div *ngFor="let poke of pokemon" class="pokemon" [ngClass]="{ 'hidden': !poke.isVisible} "(click)="onSelectPokemon(poke); onVisibility(poke) ">
+        <img class="imgPoke" src="{{poke.imgSrc}}" alt="{{ poke.name }}">
+        <h3 class="name">{{ poke.name }}</h3>
+        <p class="atack">{{ poke.attack }}</p>
+    </div>
+</div>

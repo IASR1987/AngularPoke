@@ -1,0 +1,15 @@
+.container{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-image: url('https://assets.pokemon.com//assets/cms2-es-es/img/misc/virtual-backgrounds/masters/forest.jpg');
+}
+.pokemon{
+    display: flex;
+    flex-grow: 1;
+    width: 100%;
+    justify-content: center;
+}

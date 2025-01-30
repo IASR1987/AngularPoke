@@ -1,0 +1,45 @@
+.pokemon-container {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(20%, 20%)); /* Ajusta las columnas automáticamente */
+    gap: 5%; /* Espacio entre los elementos */
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+/* Cada div individual puede seguir siendo un contenedor de contenido */
+.pokemon-container div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center; /* Centra el texto */
+    min-width: 20%;
+    max-height: 80%;
+    padding: 8%;
+    
+}
+
+.pokemon {
+    background-color: rgba(0, 255, 255, 0.5);
+    width: 100%;
+    height: 90%;
+    border-radius: 10%;
+}
+
+.imgPoke{
+    width: 110px;
+    height: 100px;
+}
+
+.pokemon h3,p{
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #0a0a0a;
+}
+
+/* Para ocultar el Pokémon con un fondo */
+.hidden {
+    opacity: 0.5;
+}
+
