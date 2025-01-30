@@ -22,7 +22,7 @@ export class SuperHeroTableComponent {
   // Método para manejar el clic en un Pokémon
   onSelectPokemon(poke: any) {
     if(poke.isVisible){
-      alert(`Te elijo a tí ${poke}`);
+      alert(`Te elijo a tí ${poke.name}`);
     }else{
       alert(`Vuelve a casa ${poke.name}`)
     }
